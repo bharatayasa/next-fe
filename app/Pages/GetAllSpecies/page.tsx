@@ -1,7 +1,9 @@
+// pages/index.js (Halaman Utama)
 'use client'
-import React, { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import ViewUserButton from './ViewUserButton';
+import AddSpeciesForm from '../../Components/AddData/AddSpeciesForm';
 
 const baseUrl = "https://test.api.sahabatlautlestari.com/species/all";
 
@@ -44,6 +46,7 @@ const GetAllSpecies: React.FC = () => {
     return (
         <div className="overflow-x-auto flex justify-center items-center">
             <div className='container'>
+                <AddSpeciesForm />
                 <table className="table">
                     <thead>
                         <tr>
