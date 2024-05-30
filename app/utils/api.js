@@ -21,3 +21,10 @@ export const loginAdmin = async (username, password) => {
     const response = await axios.post(`${baseUrl}/auth/login`, { username, password });
     return response.data;
 };
+
+module.exports = {
+    getAllSpecies, 
+    getSpeciesById, 
+    addSpecies, 
+    loginAdmin
+}
